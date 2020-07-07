@@ -1,5 +1,6 @@
 body {
     background-image: url(../../images/triangle-mosaic.png);
+    overflow-x: hidden;
 }
 
 .bio{
@@ -7,7 +8,6 @@ body {
     padding-top: 20px;
     font-weight: bold;
     font-size: x-large;
-    
 }
 
 .myName{
