@@ -18,7 +18,7 @@ function App() {
                 <Navbar className="justify-content-end mr-3 p-3 myNavBar">
                 <NavItem><Link to="/">AboutMe | </Link></NavItem>
                 <NavItem><Link to="/portfolio">  Portfolio | </Link></NavItem>
-                <NavItem><Link to="/contact-me">Contact Me | </Link></NavItem>
+                <NavItem><Link to="/contact-me">Contact | </Link></NavItem>
                 <NavItem><Link to="https://www.linkedin.com/in/anthony-guerrero-63a3a8199/">LinkedIn | </Link></NavItem>
                 <NavItem><Link to="/GitHub">GitHub </Link></NavItem>
                 </Navbar>

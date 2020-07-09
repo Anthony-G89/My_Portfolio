@@ -20,92 +20,58 @@ import MeetHub from "../../images/MeetHub.png";
 
 class clickAbleLinks extends React.Component {
 
-    navigateToGitHubProject(repo) {
-        window.open(`https://github.com/Anthony-G89/${repo}`);
-    }
-
-    navigateToHeroku(repo) {
-        window.open(`https://dashboard.heroku.com/apps/${repo}`)
-    }
 
     render() {
         return (
             <div >
-                <Container className="portfolio-container pt-4 ">
-                    <h2 className="portfolioHeaders">Portfolio</h2>
-                    <hr />
-                    <h3 className="portfolioHeaders">Front End Work</h3>
-                    <div className="row .w-100">
-                        <div className="col " onClick={() => this.navigateToGitHubProject("password-Generator")} >
-                            <img src={PasswordGenerator} className="Links" alt="password Generator ScreenShot" width="150px" height="150px" />
-                        </div>
-                        <div className="col" onClick={() => this.navigateToGitHubProject("Code-Quiz")}>
-                            <div className="col ">
-                                <img src={CodeQuiz} className="Links" alt="Code Quiz ScreenShot" width="150px" height="150px" />
-                            </div>
-                        </div>
-                        <div className="col" onClick={() => this.navigateToGitHubProject("work-day-scheduler")}>
-                            <div className="col">
-                                <img src={WorkScheduler} className="Links" alt="Work Day ScreenShot" width="150px" height="150px" />
-                            </div>
-                        </div>
-                        <div className="col" onClick={() => this.navigateToGitHubProject("weather-dashboard")}>
-                            <div className="col pt-2 pl-0">
-                                <img src={WeatherDasbored} className="Links" alt="Weather Dashbored  " width="150px" height="150px" />
-                            </div>
-                        </div>
+                {/* <div className="container">
+                    <div className="mySlides">
+                        <div className="numberText">1/5</div>
+                        <img src={PasswordGenerator} style={{ width: 1000 }} />
                     </div>
-                    <div className="row" >
-                        <div className="col" onClick={() => this.navigateToGitHubProject("good_readme")}>
-                            <img src={GoodReadme} className="Links" alt="password Generator ScreenShot" width="150px" height="150px" />
-                        </div>
+                    <div className="mySlides">
+                        <div className="numberText">2/5</div>
+                        <img src={CodeQuiz} style={{ width: 1000 }} />
                     </div>
+                    <div className="mySlides">
+                        <div className="numberText">3/5</div>
+                        <img src={WorkScheduler} style={{ width: 1000 }} />
+                    </div>
+                    <div className="mySlides">
+                        <div className="numberText">4/5</div>
+                        <img src={WeatherDasbored} style={{ width: 1000 }} />
+                    </div>
+                    <div className="mySlides">
+                        <div className="numberText">5/5</div>
+                        <img src={GoodReadme} style={{ width: 1000 }} />
+                    </div> */}
 
-                    <hr />
+                    <a className="prev" onClick="plusSlides(-1)">&#10094;</a>
+                    <a className="next" onClick="plusSlides(1)">&#10095;</a>
 
-                    <h3 className="portfolioHeaders">Projects</h3>
-                    <div className="row rowTwo">
-                        <div className="col-md-3" onClick={() => this.navigateToGitHubProject("Project_One")}>
-                            <img src={LocalWire} className="Links" alt="Local Wire" width="150px" height="150px" />
-                        </div>
-                        <div className="col-md-3" onClick={() => this.navigateToGitHubProject("STACKCHAT")}>
-                            <img src={StackChat} className="Links" alt="StackChat" width="150px" height="150px" />
-                        </div>
-                        <div className="col-md-3" onClick={() => this.navigateToHeroku("ucf-meethub")}>
-                            <img src={MeetHub}  className="Links" alt="StackChat" width="150px" height="150px" />
-                        </div>
-                    </div>
-                    <hr />
-
-                    <h3 className="portfolioHeaders"> Back End Work</h3>
-                    <div className="row rowThree">
-                        <div className="col" onClick={() => this.navigateToHeroku("evening-wildwood-16240")}>
-                            <img src={NoteTaker} className="Links" alt="Note Taker Homepage" width="150px" height="150px" />
-                        </div>
-                        <div className="col" onClick={() => this.navigateToHeroku("stormy-shelf-46786")}>
-                            <img src={Burger} className="Links" alt="" width="150px" height="150px" />
-                        </div>
-                        <div className="col" onClick={() => this.navigateToGitHubProject("Team_Template")}>
-                            <img src={TeamTemplate} className="Links" alt="" width="150px" height="150px" />
-                        </div>
-                        <div className="col" onClick={() => this.navigateToGitHubProject("week-12-employee-tracker")}>
-                            <img src={EmployeeTracker} className="Links" alt="" width="150px" height="150px" />
-                        </div>
-                    </div>
-                    <div className="row mt-2">
-                        <div className="col-md-3" onClick={() => this.navigateToHeroku("gentle-hamlet-68132")}>
-                            <img src={FitnessTracker} className="Links" alt="" width="150px" height="150px" />
-                        </div>
-                        <div className="col-md-3" onClick={() => this.navigateToHeroku("whispering-beach-48990")}>
-                            <img src={BudgetTracker} className="Links" alt="" width="150px" height="150px" />
-                        </div>
-                        <div className="col" onClick={() => this.navigateToGitHubProject("week-19-react-employee-directory")}>
-                            <img src={EmployeeDirectory} className="Links" alt="" width="150px" height="150px" />
-                        </div>
+                    <div className="caption-container">
+                        <p className="caption"></p>
                     </div>
 
+                    <div className="row pt-5">
+                        <div className="column">
+                            <img className="demo cursor" src={PasswordGenerator} style={{width:430}} onClick="currentSlide(1)" />
+                        </div>
+                        <div className="column">
+                            <img className="demo cursor" src={CodeQuiz} style={{width:430}} onClick="currentSlide(2)" />
+                        </div>
+                        <div className="column">
+                            <img className="demo cursor" src={WorkScheduler} style={{width:430}} onClick="currentSlide(3)" />
+                        </div>
+                        <div className="column">
+                            <img className="demo cursor" src={WeatherDasbored} style={{width:430}} onClick="currentSlide(4)" />
+                        </div>
+                        <div className="column">
+                            <img className="demo cursor" src={GoodReadme} style={{width:430}} onClick="currentSlide(5)" />
+                        </div>
 
-                </Container>
+                    </div>
+                {/* </div> */}
             </div>
 
         )
@@ -114,8 +80,6 @@ class clickAbleLinks extends React.Component {
 };
 
 export default clickAbleLinks;
-
-
 
 
 
