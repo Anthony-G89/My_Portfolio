@@ -7,20 +7,29 @@
 }
 
 .email {
-    cursor: pointer;
     color: blue;
-    text-decoration:underline;
+    
 }
 
-.LinkedIn {
+.myEmail,
+.myLinkedIn {
     cursor: pointer;
+    color: blue;
     text-decoration: underline;
+}
+
+.myGitHub {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+
+.LinkedIn {
     color: blue;
     
 }
 
 .Github {
-    cursor: pointer;
-    text-decoration: underline;
     color: blue;
 }
