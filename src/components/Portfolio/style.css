@@ -1,48 +1,34 @@
-/* .portfolio-container{
-    background-color:#dee2e6;
-    margin-bottom: 120px;
-    padding-bottom: 15px;
-}
-
-.Links{
-    cursor: pointer;
-}
-
-.portfolioHeaders{
-    color: black;
-
-} */
-
 * {
     box-sizing: border-box;
 }
 
-.container {
+.slideshow-container {
+    max-width: 1000px;
     position: relative;
+    margin: auto;
 }
 
 .mySlides {
-    position: none;
-}
-
-.cursor {
-    cursor: pointer;
+    /* display: none; */
+    text-align: center;
+    
+    
 }
 
 .prev,
 .next {
     cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
 }
 
 .next {
@@ -52,39 +38,59 @@
 
 .prev:hover,
 .next:hover {
-    background-color: chartreuse;
+    background-color: turquoise;
+}
+
+.text {
+    color: red;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
 }
 
 .numberText {
-    color: #f2f2f2;
+    color: black ;
     font-size: 12px;
     padding: 8px 12px;
     position: absolute;
     top: 0;
 }
 
-.caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 
-.row::after {
-    content: "";
-    display: table;
-    clear: both;
+.active,
+.dot:hover {
+    background-color: blueviolet ;
 }
 
-.column {
-    float: left;
-    width: 16.66%;
-}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 4.5s;
+    animation-name: fade;
+    animation-duration: 4.5s;
+  }
 
-.demo {
-    opacity: 0.4;
-}
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 
-.demo:hover {
-    opacity: 6;
-}
+

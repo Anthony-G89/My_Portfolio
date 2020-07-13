@@ -18,60 +18,46 @@ import EmployeeDirectory from "../../images/employee_directory.png";
 import MeetHub from "../../images/MeetHub.png";
 
 
+
 class clickAbleLinks extends React.Component {
 
 
     render() {
         return (
             <div >
-                {/* <div className="container">
-                    <div className="mySlides">
+                <div className="slideshow-container">
+                    <div className="mySlides ">
                         <div className="numberText">1/5</div>
-                        <img src={PasswordGenerator} style={{ width: 1000 }} />
+                        <img src={PasswordGenerator}  style={{ width: 450 }} />
+                        <div className="text">Caption Text</div>
                     </div>
-                    <div className="mySlides">
+                    <div className="mySlides ">
                         <div className="numberText">2/5</div>
-                        <img src={CodeQuiz} style={{ width: 1000 }} />
+                        <img src={CodeQuiz} style={{ width: 450 }} />
+                        <div className="text">Caption Text</div>
                     </div>
-                    <div className="mySlides">
+                    <div className="mySlides ">
                         <div className="numberText">3/5</div>
-                        <img src={WorkScheduler} style={{ width: 1000 }} />
+                        <img src={WeatherDasbored} style={{ width: 450 }} />
+                        <div className="text">Caption Text</div>
                     </div>
-                    <div className="mySlides">
-                        <div className="numberText">4/5</div>
-                        <img src={WeatherDasbored} style={{ width: 1000 }} />
-                    </div>
-                    <div className="mySlides">
-                        <div className="numberText">5/5</div>
-                        <img src={GoodReadme} style={{ width: 1000 }} />
-                    </div> */}
 
                     <a className="prev" onClick="plusSlides(-1)">&#10094;</a>
                     <a className="next" onClick="plusSlides(1)">&#10095;</a>
 
-                    <div className="caption-container">
-                        <p className="caption"></p>
-                    </div>
+                </div>
 
-                    <div className="row pt-5">
-                        <div className="column">
-                            <img className="demo cursor" src={PasswordGenerator} style={{width:430}} onClick="currentSlide(1)" />
-                        </div>
-                        <div className="column">
-                            <img className="demo cursor" src={CodeQuiz} style={{width:430}} onClick="currentSlide(2)" />
-                        </div>
-                        <div className="column">
-                            <img className="demo cursor" src={WorkScheduler} style={{width:430}} onClick="currentSlide(3)" />
-                        </div>
-                        <div className="column">
-                            <img className="demo cursor" src={WeatherDasbored} style={{width:430}} onClick="currentSlide(4)" />
-                        </div>
-                        <div className="column">
-                            <img className="demo cursor" src={GoodReadme} style={{width:430}} onClick="currentSlide(5)" />
-                        </div>
+                <br />
 
-                    </div>
-                {/* </div> */}
+                <div style={{textAlign:"center"}}>
+                    <span clasName="dot" onClick="currentSlide(1)"></span>
+                    <span clasName="dot" onClick="currentSlide(2)"></span>
+                    <span clasName="dot" onClick="currentSlide(3)"></span>
+
+                </div>
+
+
+
             </div>
 
         )
@@ -80,6 +66,9 @@ class clickAbleLinks extends React.Component {
 };
 
 export default clickAbleLinks;
+
+
+
 
 
 
