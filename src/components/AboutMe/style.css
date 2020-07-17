@@ -4,6 +4,10 @@ body {
     
 }
 
+.container {
+    padding-top: 80px;
+}
+
 .bio{
     margin: auto;
     padding-top: 20px;

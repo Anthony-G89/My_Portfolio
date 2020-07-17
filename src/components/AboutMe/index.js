@@ -9,11 +9,9 @@ const name = "Anthony Guerrero";
 const aboutMe = props => {
     return (
         <>
-            <h2 className="myName text-center">{name}</h2>
-            
-
             <div className="row">
-                <Container >
+                <Container  >
+                    <h2 className="myName text-center">{name}</h2>
                     <p className=" col-md-5 bio">
                         I'm a driven Full Stack Developer with broad technical skill set. Completed UCF Coding Boot Camp and voted best projects by my peers. User-focused Web Developer with a passion for integrating technologies to solve problems and improve upon existing methods. Fast learner, hard worker and team player who is proficient in an array of programming languages.
                     </p>
