@@ -21,6 +21,22 @@ import MeetHub from "../../images/MeetHub.png";
 
 class clickAbleLinks extends React.Component {
 
+    // var collapsible = ref="collapsible";
+    // var i;
+
+    // for (i = 0; i < collapsible.length; i ++) {
+    //     collapsible[i].addEventListener("click", function(){
+    //         this.classList.toggle("active");
+    //         var content = this.nextElementSibling;
+    //         if(content.style.display === "block") {
+    //             content.style.display = "none";
+    //         } else {
+    //             content.style.display = "block";
+    //         }
+    //     })
+
+    // }
+
 
 
 
@@ -30,6 +46,12 @@ class clickAbleLinks extends React.Component {
                 <Carousel data-pause="hover" >
                     <Carousel.Item>
                         <img className="center" src={PasswordGenerator} alt="Image of password Generator" />
+                        <button type="button" className="collapsible">Password Generator</button>
+                        <div className="content">
+                            <p> This is a test</p>
+                        </div>
+                        
+
                     </Carousel.Item>
                     <Carousel.Item>
                         <img className="center" src={CodeQuiz} alt=" Image of Code Quiz" />

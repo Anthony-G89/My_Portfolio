@@ -8,6 +8,31 @@
     width: 50%;
   }
 
+  .collapsible {
+    position: absolute;
+    left: 574px;
+    bottom: 50px;
+    background-color: red;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 40%;
+    border: none;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
 /* .carousel-control-prev {
     background-color: blue;
 }

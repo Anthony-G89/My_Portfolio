@@ -1,35 +1,16 @@
 .containerHolder{
     padding-top: 70px;
 }
-.Title{
-    color: red;
-
-}
 
 .email {
-    color: blue;
-    
+    color: red;
 }
+
 
 .myEmail,
-.myLinkedIn {
-    cursor: pointer;
-    color: blue;
-    text-decoration: underline;
-}
-
+.myLinkedIn,
 .myGitHub {
     cursor: pointer;
-    color: blue;
+    color: black;
     text-decoration: underline;
-}
-
-
-.LinkedIn {
-    color: blue;
-    
-}
-
-.Github {
-    color: blue;
 }
