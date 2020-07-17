@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Container } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import StackChat from "../../images/STACK_CHAT.png";
 import CodeQuiz from "../../images/Code Quiz.png";
 import PasswordGenerator from "../../images/password_generator.png";
@@ -22,39 +22,55 @@ import MeetHub from "../../images/MeetHub.png";
 class clickAbleLinks extends React.Component {
 
 
+
+
     render() {
         return (
-            <div >
-                <div className="slideshow-container">
-                    <div className="mySlides ">
-                        <div className="numberText">1/5</div>
-                        <img src={PasswordGenerator}  style={{ width: 450 }} />
-                        <div className="text">Caption Text</div>
-                    </div>
-                    <div className="mySlides ">
-                        <div className="numberText">2/5</div>
-                        <img src={CodeQuiz} style={{ width: 450 }} />
-                        <div className="text">Caption Text</div>
-                    </div>
-                    <div className="mySlides ">
-                        <div className="numberText">3/5</div>
-                        <img src={WeatherDasbored} style={{ width: 450 }} />
-                        <div className="text">Caption Text</div>
-                    </div>
-
-                    <a className="prev" onClick="plusSlides(-1)">&#10094;</a>
-                    <a className="next" onClick="plusSlides(1)">&#10095;</a>
-
-                </div>
-
-                <br />
-
-                <div style={{textAlign:"center"}}>
-                    <span clasName="dot" onClick="currentSlide(1)"></span>
-                    <span clasName="dot" onClick="currentSlide(2)"></span>
-                    <span clasName="dot" onClick="currentSlide(3)"></span>
-
-                </div>
+            <div>
+                <Carousel data-pause="hover" >
+                    <Carousel.Item>
+                        <img className="center" src={PasswordGenerator} alt="Image of password Generator" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="center" src={CodeQuiz} alt=" Image of Code Quiz" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="center" src={WeatherDasbored} alt="Image of Weather Dashbored" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="center" src={GoodReadme} alt="Image of Good README" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="center" src={LocalWire} alt=" Image of Localwire" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="center" src={StackChat} alt=" Image of Stack Chat" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="center" src={NoteTaker} alt="Image of Note Taker" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="center" src={Burger} alt=" Image of Burger" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="center" src={TeamTemplate} alt=" Image of Team Template" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="center" src={EmployeeDirectory} alt="Image of Employee Directory" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="center" src={EmployeeTracker} alt="Image of Employee Tracker" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="center" src={FitnessTracker} alt="Image of Fitness Tracker" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="center" src={BudgetTracker} alt="Image of Budget Tracker" />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                        <img className="center" src={MeetHub} alt="Image of MeetHub" />
+                    </Carousel.Item>
+                </Carousel>
 
 
 
