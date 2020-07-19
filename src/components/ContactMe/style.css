@@ -3,7 +3,7 @@
 }
 
 .email {
-    color: red;
+    color: rgb(89, 148, 33);
 }
 
 
@@ -11,6 +11,6 @@
 .myLinkedIn,
 .myGitHub {
     cursor: pointer;
-    color: black;
+    color: white;
     text-decoration: underline;
 }
