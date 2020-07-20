@@ -5,7 +5,7 @@ import { Carousel } from "react-bootstrap";
 import StackChat from "../../images/STACK_CHAT.png";
 import CodeQuiz from "../../images/Code Quiz.png";
 import PasswordGenerator from "../../images/password_generator.png";
-import WorkScheduler from "../../images/work_day-Scheduler.png";
+// import WorkScheduler from "../../images/work_day-Scheduler.png";
 import WeatherDasbored from "../../images/showingFiveDayForeCast(2).png";
 import GoodReadme from "../../images/good_readme.png";
 import LocalWire from "../../images/Local Wire.png";
@@ -61,6 +61,7 @@ class clickAbleLinks extends React.Component {
                             <p className="link">Click on the image to see my repository</p>
                         </Carousel.Caption>
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <img className="center" onClick={() => this.nagvigateToGitHubProject("weather-dashboard")} src={WeatherDasbored}
                             alt="Image of Weather Dashbored" />
@@ -69,6 +70,7 @@ class clickAbleLinks extends React.Component {
                             <h2 className="link">Click on the image to see my repository</h2>
                         </Carousel.Caption>
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <img className="center" onClick={() => this.nagvigateToGitHubProject("good_readme")} src={GoodReadme}
                             alt="Image of Good README" />
@@ -77,6 +79,7 @@ class clickAbleLinks extends React.Component {
                             <p className="link">Click on the image to see my repository</p>
                         </Carousel.Caption>
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <img className="center" onClick={() => this.nagvigateToGitHubProject("Project_One")} src={LocalWire}
                             alt=" Image of Localwire" />
@@ -86,6 +89,7 @@ class clickAbleLinks extends React.Component {
                             <p className="link">Click on the image to see my repository</p>
                         </Carousel.Caption>
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <img className="center" onClick={() => this.nagvigateToGitHubProject("STACKCHAT")} src={StackChat}
                             alt=" Image of Stack Chat" />
@@ -95,6 +99,7 @@ class clickAbleLinks extends React.Component {
                             <h3 className="scLink">Click on the image to see my repository</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <img className="center" onClick={() => this.nagvigateToGitHubProject("week-11-note-taker")} src={NoteTaker}
                             alt="Image of Note Taker" />
@@ -104,6 +109,7 @@ class clickAbleLinks extends React.Component {
                             <p className="link">Click on the image to see my repository</p>
                         </Carousel.Caption>
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <img className="center" onClick={() => this.nagvigateToGitHubProject("burger")} src={Burger}
                             alt=" Image of Burger" />
@@ -113,6 +119,7 @@ class clickAbleLinks extends React.Component {
                             <p className="link">Click on the image to see my repository</p>
                         </Carousel.Caption>
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <img className="center" onClick={() => this.nagvigateToGitHubProject("Team_Template")} src={TeamTemplate}
                             alt=" Image of Team Template" />
@@ -123,6 +130,7 @@ class clickAbleLinks extends React.Component {
                             <p className="link">Click on the image to see my repository</p>
                         </Carousel.Caption>
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <img className="center" onClick={() => this.nagvigateToGitHubProject("week-19-react-employee-directory")} src={EmployeeDirectory}
                             alt="Image of Employee Directory" />
@@ -132,6 +140,7 @@ class clickAbleLinks extends React.Component {
                             <h3 className="link">Click on the image to see my repository</h3>
                         </Carousel.Caption>
                     </Carousel.Item>
+                    
                     <Carousel.Item>
                         <img className="center" onClick={() => this.nagvigateToGitHubProject("week-12-employee-tracker")} src={EmployeeTracker}
                             alt="Image of Employee Tracker" />
@@ -141,6 +150,7 @@ class clickAbleLinks extends React.Component {
                             <p className="link">Click on the image to see my repository</p>
                         </Carousel.Caption>
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <img className="center" onClick={() => this.nagvigateToGitHubProject("week_17workout-tracker")} src={FitnessTracker}
                             alt="Image of Fitness Tracker" />
@@ -149,6 +159,7 @@ class clickAbleLinks extends React.Component {
                             <p className="link">Click on the image to see my repository</p>
                         </Carousel.Caption>
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <img className="center" onClick={() => this.nagvigateToGitHubProject("week-18-pwa-budget-tracker")} src={BudgetTracker}
                             alt="Image of Budget Tracker" />
@@ -158,6 +169,7 @@ class clickAbleLinks extends React.Component {
                             <p className="link">Click on the image to see my repository</p>
                         </Carousel.Caption>
                     </Carousel.Item>
+
                     <Carousel.Item>
                         <img className="center" onClick={() => this.nagvigateToGitHubProject("meethub")} src={MeetHub}
                             alt="Image of MeetHub" />
@@ -166,6 +178,7 @@ class clickAbleLinks extends React.Component {
                             <p className="link">Click on the image to see my repository</p>
                         </Carousel.Caption>
                     </Carousel.Item>
+
                 </Carousel>
 
 
