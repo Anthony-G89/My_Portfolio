@@ -1,11 +1,12 @@
 .center {
 
-    max-width: 800px;
+    max-width: 950px;
     padding-top: 70px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    cursor: pointer;
   }
 
   .collapsible {
@@ -33,6 +34,25 @@
     background-color: #f1f1f1;
   }
 
+  .description {
+    color: black;
+  }
+
+  .link {
+    color: red; 
+  }
+
+  .scDescription {
+    color: #007bff;
+    padding: 0 0 26px 0;
+  }
+
+  .scLink {
+    color: red;
+    padding-bottom: 13px;
+    
+  }
+
 /* .carousel-control-prev {
     background-color: blue;
 }
@@ -40,10 +60,6 @@
 .carousel-control-next {
     background-color: chartreuse;
 } */
-
-.carousel-indicators {
-    padding-top: 150px;
-}
 
 /* .carousel-control-next-icon {
     background-color: red;

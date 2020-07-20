@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import "./style.css";
 import { Carousel } from "react-bootstrap";
@@ -19,23 +20,21 @@ import MeetHub from "../../images/MeetHub.png";
 
 
 
+
 class clickAbleLinks extends React.Component {
 
-    // var collapsible = ref="collapsible";
-    // var i;
+    nagvigateToGitHubProject(repo) {
 
-    // for (i = 0; i < collapsible.length; i ++) {
-    //     collapsible[i].addEventListener("click", function(){
-    //         this.classList.toggle("active");
-    //         var content = this.nextElementSibling;
-    //         if(content.style.display === "block") {
-    //             content.style.display = "none";
-    //         } else {
-    //             content.style.display = "block";
-    //         }
-    //     })
+        window.open(`https://github.com/Anthony-G89/${repo}`);
+    }
 
-    // }
+    hello() {
+        alert("click on ")
+    }
+
+    nagvigateToHeroku(repo) {
+        window.open(`https://dashboard.heroku.com/apps/${repo}`)
+    }
 
 
 
@@ -43,54 +42,129 @@ class clickAbleLinks extends React.Component {
     render() {
         return (
             <div>
+
                 <Carousel data-pause="hover" >
                     <Carousel.Item>
-                        <img className="center" src={PasswordGenerator} alt="Image of password Generator" />
-                        <button type="button" className="collapsible">Password Generator</button>
-                        <div className="content">
-                            <p> This is a test</p>
-                        </div>
-                        
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("Password-Generator")} src={PasswordGenerator}
+                            alt="Image of password Generator" />
+                        <Carousel.Caption>
+                            <h2 className="description">User will be able to generate a password</h2>
+                            <p className="link">Click on the image to see my repository</p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
 
+                    <Carousel.Item>
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("Code-Quiz")} src={CodeQuiz}
+                            alt=" Image of Code Quiz" />
+                        <Carousel.Caption>
+                            <h2 className="description">User will be able to take a code quiz</h2>
+                            <p className="link">Click on the image to see my repository</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="center" src={CodeQuiz} alt=" Image of Code Quiz" />
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("weather-dashboard")} src={WeatherDasbored}
+                            alt="Image of Weather Dashbored" />
+                        <Carousel.Caption>
+                            <h2 className="description"> User can enter a city to see the forecast</h2>
+                            <h2 className="link">Click on the image to see my repository</h2>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="center" src={WeatherDasbored} alt="Image of Weather Dashbored" />
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("good_readme")} src={GoodReadme}
+                            alt="Image of Good README" />
+                        <Carousel.Caption>
+                            <h2 className="description"> Example of a good README</h2>
+                            <p className="link">Click on the image to see my repository</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="center" src={GoodReadme} alt="Image of Good README" />
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("Project_One")} src={LocalWire}
+                            alt=" Image of Localwire" />
+                        <Carousel.Caption>
+                            <h2 className="description" style={{color:"white"}}> LocalWire is an app that will the show user the nearest<br />
+                        bars, restaurant, and events</h2>
+                            <p className="link">Click on the image to see my repository</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="center" src={LocalWire} alt=" Image of Localwire" />
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("STACKCHAT")} src={StackChat}
+                            alt=" Image of Stack Chat" />
+                        <Carousel.Caption>
+                            <h2 className="scDescription">StackChat is an app that will let users chat with other users<br />
+                        Simple just need to register and start chatting away.</h2>
+                            <h3 className="scLink">Click on the image to see my repository</h3>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="center" src={StackChat} alt=" Image of Stack Chat" />
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("week-11-note-taker")} src={NoteTaker}
+                            alt="Image of Note Taker" />
+                        <Carousel.Caption>
+                            <h2 className="description"> Note Taker is an app where user can add their notes<br />
+                        update, and delete. Also, has data persistence </h2>
+                            <p className="link">Click on the image to see my repository</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="center" src={NoteTaker} alt="Image of Note Taker" />
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("burger")} src={Burger}
+                            alt=" Image of Burger" />
+                        <Carousel.Caption>
+                            <h2 className="description"> Burger is an app were the users will get to enter a burger and<br />
+                        the burger then will be added to a list</h2>
+                            <p className="link">Click on the image to see my repository</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="center" src={Burger} alt=" Image of Burger" />
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("Team_Template")} src={TeamTemplate}
+                            alt=" Image of Team Template" />
+                        <Carousel.Caption>
+                            <h2 className="description">Team Template is an app where a manager or anyone who<br />
+                        wants to generate a web page of his/her employee's<br />
+                        or friends basic information </h2>
+                            <p className="link">Click on the image to see my repository</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="center" src={TeamTemplate} alt=" Image of Team Template" />
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("week-19-react-employee-directory")} src={EmployeeDirectory}
+                            alt="Image of Employee Directory" />
+                        <Carousel.Caption>
+                            <h2 className="description">Users can enter employees name<br />
+                        in the search bar to shorten the list of employees </h2>
+                            <h3 className="link">Click on the image to see my repository</h3>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="center" src={EmployeeDirectory} alt="Image of Employee Directory" />
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("week-12-employee-tracker")} src={EmployeeTracker}
+                            alt="Image of Employee Tracker" />
+                        <Carousel.Caption>
+                            <h2 className="description" style={{ color: "white" }}>Employee Tracker is an app where a user can add a department,<br />
+                         role, or new employee </h2>
+                            <p className="link">Click on the image to see my repository</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="center" src={EmployeeTracker} alt="Image of Employee Tracker" />
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("week_17workout-tracker")} src={FitnessTracker}
+                            alt="Image of Fitness Tracker" />
+                        <Carousel.Caption>
+                            <h2 className="description"> Fitness Tracker will let users to add exercise </h2>
+                            <p className="link">Click on the image to see my repository</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="center" src={FitnessTracker} alt="Image of Fitness Tracker" />
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("week-18-pwa-budget-tracker")} src={BudgetTracker}
+                            alt="Image of Budget Tracker" />
+                        <Carousel.Caption>
+                            <h2 className="description">The user will be able to add expenses and deposits to their<br />
+                        budget with or without internet connection.<br />App has data persistence</h2>
+                            <p className="link">Click on the image to see my repository</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                        <img className="center" src={BudgetTracker} alt="Image of Budget Tracker" />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                        <img className="center" src={MeetHub} alt="Image of MeetHub" />
+                        <img className="center" onClick={() => this.nagvigateToGitHubProject("meethub")} src={MeetHub}
+                            alt="Image of MeetHub" />
+                        <Carousel.Caption>
+                            <h2 className="description" style={{ color: "white" }}> MeetHub is a video application </h2>
+                            <p className="link">Click on the image to see my repository</p>
+                        </Carousel.Caption>
                     </Carousel.Item>
                 </Carousel>
 

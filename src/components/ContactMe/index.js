@@ -40,6 +40,8 @@ class EmailMe extends React.Component {
                     <div className="Github text-center" onClick={() => this.navigateToGitHub("https://github.com/Anthony-G89")} >
                         <h3 style={{ color: "green" }}>Github:</h3><h2 className="myGitHub">https://github.com/Anthony-G89 </h2>
                     </div>
+
+                    
                 </Container>
             </div>
 

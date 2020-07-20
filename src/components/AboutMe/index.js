@@ -8,7 +8,7 @@ const name = "Anthony Guerrero";
 
 const aboutMe = props => {
     return (
-        <>
+        <>  
             <div className="row">
                 <Container  >
                     <h2 className="myName text-center">{name}</h2>
