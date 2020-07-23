@@ -14,9 +14,9 @@ function App() {
         <div>
             <Router>
                 <Navbar className="justify-content-end mr-3 p-3 myNavBar">
-                <NavItem className="myNav"><Link to="/">AboutMe | </Link></NavItem>
-                <NavItem><Link to="/portfolio">  Portfolio | </Link></NavItem>
-                <NavItem><Link to="/contact-me">Contact | </Link></NavItem>
+                <NavItem ><Link to="/">AboutMe | </Link></NavItem>
+                <NavItem><Link to="/portfolio"> My Portfolios | </Link></NavItem>
+                <NavItem><Link to="/contact-me">Contact| </Link></NavItem>
                 </Navbar>
                 {/* <Route  component={NavBar} /> */}
                 <Route exact path="/" component={aboutMeHeader} />

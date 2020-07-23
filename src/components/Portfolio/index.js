@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import ReactCardCarousel from "react-card-carousel";
 import "./style.css";
@@ -12,6 +11,7 @@ import Burger from "../../images/Burgers.png";
 import FitnessTracker from "../../images/home_fitness_tracker.png";
 import EmployeeDirectory from "../../images/employee_directory.png";
 import MeetHub from "../../images/MeetHub.png";
+/* eslint-disable jsx-a11y/img-redundant-alt */
 // import WorkScheduler from "../../images/work_day-Scheduler.png";
 // import GoodReadme from "../../images/good_readme.png";
 // import TeamTemplate from "../../images/team_template_final.png";
@@ -115,6 +115,8 @@ class clickAbleLinks extends React.Component {
 
     render() {
         return (
+
+
             <div style={clickAbleLinks.CONTAINER_STYLE}>
                 <ReactCardCarousel autoplay={false} autoplay_speed={6500} >
                     <div style={clickAbleLinks.CARD_STYLE}>Password Generator

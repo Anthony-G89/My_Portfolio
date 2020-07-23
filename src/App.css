@@ -1,20 +1,13 @@
 .App {
   text-align: center;
 }
-.mike{
-  padding: 3px;
-}
+
 
 .myNavBar{
   font-size: large;
   font-weight: bold;
 
 }
-
-.myNav {
-  color: white;
-}
-
 
 .App-logo {
   height: 40vmin;

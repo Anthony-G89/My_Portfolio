@@ -11,6 +11,6 @@
 .myLinkedIn,
 .myGitHub {
     cursor: pointer;
-    color: white;
+    color: #007bff;
     text-decoration: underline;
 }
