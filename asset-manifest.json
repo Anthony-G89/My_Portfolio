@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/My_Portfolio/static/css/main.4d6177ba.chunk.css",
+    "main.js": "/My_Portfolio/static/js/main.01195194.chunk.js",
+    "main.js.map": "/My_Portfolio/static/js/main.01195194.chunk.js.map",
+    "runtime-main.js": "/My_Portfolio/static/js/runtime-main.5ae618d6.js",
+    "runtime-main.js.map": "/My_Portfolio/static/js/runtime-main.5ae618d6.js.map",
+    "static/js/2.019a3c91.chunk.js": "/My_Portfolio/static/js/2.019a3c91.chunk.js",
+    "static/js/2.019a3c91.chunk.js.map": "/My_Portfolio/static/js/2.019a3c91.chunk.js.map",
+    "index.html": "/My_Portfolio/index.html",
+    "precache-manifest.bc0fee4a3225f2c5e51b1c80bf24ca0e.js": "/My_Portfolio/precache-manifest.bc0fee4a3225f2c5e51b1c80bf24ca0e.js",
+    "service-worker.js": "/My_Portfolio/service-worker.js",
+    "static/css/main.4d6177ba.chunk.css.map": "/My_Portfolio/static/css/main.4d6177ba.chunk.css.map",
+    "static/js/2.019a3c91.chunk.js.LICENSE.txt": "/My_Portfolio/static/js/2.019a3c91.chunk.js.LICENSE.txt",
+    "static/media/Burgers.png": "/My_Portfolio/static/media/Burgers.05aa44a1.png",
+    "static/media/Code Quiz.png": "/My_Portfolio/static/media/Code Quiz.2d164355.png",
+    "static/media/Local Wire.png": "/My_Portfolio/static/media/Local Wire.3385ec05.png",
+    "static/media/MeetHub.png": "/My_Portfolio/static/media/MeetHub.d8bf060a.png",
+    "static/media/STACK_CHAT.png": "/My_Portfolio/static/media/STACK_CHAT.f7749b29.png",
+    "static/media/style.css": "/My_Portfolio/static/media/double-bubble-dark.444cea35.png",
+    "static/media/employee_directory.png": "/My_Portfolio/static/media/employee_directory.1aabd70d.png",
+    "static/media/home_fitness_tracker.png": "/My_Portfolio/static/media/home_fitness_tracker.7448261f.png",
+    "static/media/home_week11_noteTaker.png": "/My_Portfolio/static/media/home_week11_noteTaker.83ae6d24.png",
+    "static/media/password_generator.png": "/My_Portfolio/static/media/password_generator.d4538a78.png",
+    "static/media/showingFiveDayForeCast(2).png": "/My_Portfolio/static/media/showingFiveDayForeCast(2).504f3e8e.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5ae618d6.js",
+    "static/js/2.019a3c91.chunk.js",
+    "static/css/main.4d6177ba.chunk.css",
+    "static/js/main.01195194.chunk.js"
+  ]
+}
