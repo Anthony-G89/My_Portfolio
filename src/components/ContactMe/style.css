@@ -10,7 +10,16 @@
 .myEmail,
 .myLinkedIn,
 .myGitHub {
+    margin-left: auto;
+    margin-right: auto;
     cursor: pointer;
     color: #007bff;
     text-decoration: underline;
+}
+
+
+.myEmail:hover,
+.myLinkedIn:hover,
+.myGitHub:hover {
+    color: purple;
 }
