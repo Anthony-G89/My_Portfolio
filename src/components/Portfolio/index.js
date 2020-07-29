@@ -129,7 +129,7 @@ class clickAbleLinks extends React.Component {
 
 
             <div style={clickAbleLinks.CONTAINER_STYLE}>
-                <ReactCardCarousel autoplay={false} autoplay_speed={6500} >
+                <ReactCardCarousel autoplay={false}  autoplay_speed={6500} >
                     <div style={clickAbleLinks.CARD_STYLE}>Password Generator
                         <p style={clickAbleLinks.pageNumber}>1/10</p>
                         <img style={clickAbleLinks.PICTURE_STYLE} src={PasswordGenerator}
@@ -171,7 +171,7 @@ class clickAbleLinks extends React.Component {
                     </div>
 
                     <div style={clickAbleLinks.CARD_STYLE}>Stack chat
-                    <p style={clickAbleLinks.pageNumber}>5/10</p>
+                        <p style={clickAbleLinks.pageNumber}>5/10</p>
                         <img style={clickAbleLinks.PICTURE_STYLE} src={StackChat}
                             alt=" Image of Stack Chat" />
                         <p style={clickAbleLinks.DESCRIPTION}>This app will let users chat with other users. Simple just need to register and start chatting away.</p>
@@ -181,7 +181,7 @@ class clickAbleLinks extends React.Component {
                     </div>
 
                     <div style={clickAbleLinks.CARD_STYLE}>Meet Hub
-                    <p style={clickAbleLinks.pageNumber}>6/10</p>
+                        <p style={clickAbleLinks.pageNumber}>6/10</p>
                         <img style={clickAbleLinks.PICTURE_STYLE} src={MeetHub}
                             alt="Image of MeetHub" />
                         <p style={clickAbleLinks.DESCRIPTION}>Meet Hub is a video application that lets user video chat, message each other, and screen share.</p>
@@ -191,17 +191,17 @@ class clickAbleLinks extends React.Component {
                     </div>
 
                     <div style={clickAbleLinks.CARD_STYLE}>Note Taker
-                    <p style={clickAbleLinks.pageNumber}>7/10</p>
+                        <p style={clickAbleLinks.pageNumber}>7/10</p>
                         <img style={clickAbleLinks.PICTURE_STYLE} src={NoteTaker}
                             alt="Image of Note Taker" />
                         <p style={clickAbleLinks.DESCRIPTION}>Note Taker is an app where user can add their notes update, and delete. Also, has data persistence.</p>
-                        <p style={clickAbleLinks.TECHNOLOGIES_USED}>Technologies used: HTML5, CSS3,Express,Express-router,fs,and path</p>
+                        <p style={clickAbleLinks.TECHNOLOGIES_USED}>Technologies used: HTML5, CSS3,Express,Express-router,fs, and path</p>
                         <p style={clickAbleLinks.LINK} onClick={() => this.nagvigateToGitHubProject("week-11-note-taker")}> GitHub repository</p>
                         <p style={clickAbleLinks.DEPLOY_LINKED} onClick={() => window.open("https://evening-wildwood-16240.herokuapp.com/")}>Deployed Link to app</p>
                     </div>
 
                     <div style={clickAbleLinks.CARD_STYLE}>Burgers
-                    <p style={clickAbleLinks.pageNumber}>8/10</p>
+                        <p style={clickAbleLinks.pageNumber}>8/10</p>
                         <img style={clickAbleLinks.PICTURE_STYLE} src={Burger}
                             alt="Image of Burgers" />
                         <p style={clickAbleLinks.DESCRIPTION}>Eat-Da-Burger is an app were the users will get to enter a burger and the burger then will be added to a list. After the burger is eaten, the user will get the chance to click devoured and be moved down to the devour list.</p>
@@ -211,7 +211,7 @@ class clickAbleLinks extends React.Component {
                     </div>
 
                     <div style={clickAbleLinks.CARD_STYLE}>Fitness Tracker
-                    <p style={clickAbleLinks.pageNumber}>9/10</p>
+                        <p style={clickAbleLinks.pageNumber}>9/10</p>
                         <img style={clickAbleLinks.PICTURE_STYLE} src={FitnessTracker}
                             alt="Image of Fitness Tracker" />
                         <p style={clickAbleLinks.DESCRIPTION}>User will be able to add a exercise, also add exercise to a previous workout plan</p>
@@ -221,7 +221,7 @@ class clickAbleLinks extends React.Component {
                     </div>
 
                     <div style={clickAbleLinks.CARD_STYLE}>Employee Directory
-                    <p style={clickAbleLinks.pageNumber}>10/10</p>
+                        <p style={clickAbleLinks.pageNumber}>10/10</p>
                         <img style={clickAbleLinks.PICTURE_STYLE} src={EmployeeDirectory}
                             alt="Image of Employee Directory" />
                         <p style={clickAbleLinks.DESCRIPTION}>Employee Directory was build using React. User can enter employees name in the search bar to shorten the list of employees</p>
@@ -264,94 +264,7 @@ export default clickAbleLinks;
                     //     </Carousel.Caption>
                     // </Carousel.Item>
 
-                    // <Carousel.Item>
-                    //     <img className="center" onClick={() => this.nagvigateToGitHubProject("STACKCHAT")} src={StackChat}
-                    //         alt=" Image of Stack Chat" />
-                    //     <Carousel.Caption>
-                    //         <h2 className="scDescription">StackChat is an app that will let users chat with other users<br />
-                    //     Simple just need to register and start chatting away.</h2>
-                    //         <h3 className="scLink">Click on the image to see my repository</h3>
-                    //     </Carousel.Caption>
-                    // </Carousel.Item>
-
-                    // <Carousel.Item>
-                    //     <img className="center" onClick={() => this.nagvigateToGitHubProject("week-11-note-taker")} src={NoteTaker}
-                    //         alt="Image of Note Taker" />
-                    //     <Carousel.Caption>
-                    //         <h2 className="description"> Note Taker is an app where user can add their notes<br />
-                    //     update, and delete. Also, has data persistence </h2>
-                    //         <p className="link">Click on the image to see my repository</p>
-                    //     </Carousel.Caption>
-                    // </Carousel.Item>
-
-                    // <Carousel.Item>
-                    //     <img className="center" onClick={() => this.nagvigateToGitHubProject("burger")} src={Burger}
-                    //         alt=" Image of Burger" />
-                    //     <Carousel.Caption>
-                    //         <h2 className="description"> Burger is an app were the users will get to enter a burger and<br />
-                    //     the burger then will be added to a list</h2>
-                    //         <p className="link">Click on the image to see my repository</p>
-                    //     </Carousel.Caption>
-                    // </Carousel.Item>
-
-                    // <Carousel.Item>
-                    //     <img className="center" onClick={() => this.nagvigateToGitHubProject("Team_Template")} src={TeamTemplate}
-                    //         alt=" Image of Team Template" />
-                    //     <Carousel.Caption>
-                    //         <h2 className="description">Team Template is an app where a manager or anyone who<br />
-                    //     wants to generate a web page of his/her employee's<br />
-                    //     or friends basic information </h2>
-                    //         <p className="link">Click on the image to see my repository</p>
-                    //     </Carousel.Caption>
-                    // </Carousel.Item>
-
-                    // <Carousel.Item>
-                    //     <img className="center" onClick={() => this.nagvigateToGitHubProject("week-19-react-employee-directory")} src={EmployeeDirectory}
-                    //         alt="Image of Employee Directory" />
-                    //     <Carousel.Caption>
-                    //         <h2 className="description">Users can enter employees name<br />
-                    //     in the search bar to shorten the list of employees </h2>
-                    //         <h3 className="link">Click on the image to see my repository</h3>
-                    //     </Carousel.Caption>
-                    // </Carousel.Item>
-
-                    // <Carousel.Item>
-                    //     <img className="center" onClick={() => this.nagvigateToGitHubProject("week-12-employee-tracker")} src={EmployeeTracker}
-                    //         alt="Image of Employee Tracker" />
-                    //     <Carousel.Caption>
-                    //         <h2 className="description" style={{ color: "white" }}>Employee Tracker is an app where a user can add a department,<br />
-                    //      role, or new employee </h2>
-                    //         <p className="link">Click on the image to see my repository</p>
-                    //     </Carousel.Caption>
-                    // </Carousel.Item>
-
-                    // <Carousel.Item>
-                    //     <img className="center" onClick={() => this.nagvigateToGitHubProject("week_19workout-tracker")} src={FitnessTracker}
-                    //         alt="Image of Fitness Tracker" />
-                    //     <Carousel.Caption>
-                    //         <h2 className="description"> Fitness Tracker will let users to add exercise </h2>
-                    //         <p className="link">Click on the image to see my repository</p>
-                    //     </Carousel.Caption>
-                    // </Carousel.Item>
-
-                    // <Carousel.Item>
-                    //     <img className="center" onClick={() => this.nagvigateToGitHubProject("week-18-pwa-budget-tracker")} src={BudgetTracker}
-                    //         alt="Image of Budget Tracker" />
-                    //     <Carousel.Caption>
-                    //         <h2 className="description">The user will be able to add expenses and deposits to their<br />
-                    //     budget with or without internet connection.<br />App has data persistence</h2>
-                    //         <p className="link">Click on the image to see my repository</p>
-                    //     </Carousel.Caption>
-                    // </Carousel.Item>
-
-                    // <Carousel.Item>
-                    //     <img className="center" onClick={() => this.nagvigateToGitHubProject("meethub")} src={MeetHub}
-                    //         alt="Image of MeetHub" />
-                    //     <Carousel.Caption>
-                    //         <h2 className="description" style={{ color: "white" }}> MeetHub is a video application </h2>
-                    //         <p className="link">Click on the image to see my repository</p>
-                    //     </Carousel.Caption>
-                    // </Carousel.Item>
+                  
 
 
 

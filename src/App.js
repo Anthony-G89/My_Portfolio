@@ -18,15 +18,13 @@ function App() {
                 <NavItem><Link to="/portfolio"> My Portfolios | </Link></NavItem>
                 <NavItem><Link to="/contact-me">Contact| </Link></NavItem>
                 </Navbar>
-                {/* <Route  component={NavBar} /> */}
+                
                 <Route exact path="/" component={aboutMeHeader} />
                 <Route exact path="/contact-me" component={ContactMe} /> 
                 <Route exact path="/portfolio" component={Portfolio} />
                 <Route component={Footer} />
             </Router>
         </div>
-
-
 
     )
 };
